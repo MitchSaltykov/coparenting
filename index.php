@@ -137,13 +137,18 @@ switch ($user) {
 
 			<?php if ($user == 'sw' && empty($page)) {
 				include('sw_welcome.html');
-			} elseif ($user == 'sw' && $page = 'relationships_list') {
+			} elseif ($user == 'sw' && $page == 'relationships_list') {
 				include('relationships_list.php');
 			} ?>
 
 			<?php
-			if ($user == 'fp' && $page = 'relationships_list') {
+			if ($user == 'fp' && empty($page)) {
 				include('relationships_list_fp.php');
+			}?>
+
+			<?php
+			if ($user == 'fp' && $page == 'messages') {
+				include('hardcoded_html/messages_fp.html');
 			}?>
 
 		</section>
