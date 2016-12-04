@@ -91,6 +91,9 @@
 /* phones */
 @media only screen 
 	and (max-width: 568px) {
+		span.welcome {
+			display: none;
+		}
 		.hamburger form {
 			display: block;
 		}

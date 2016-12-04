@@ -29,6 +29,15 @@ body.has-header-fixed .overlay {
 	.hamburger form {
 		display: none;
 	}
+	#main_header .welcome {
+		font-size: .8rem;
+		margin-right: 1.5rem;
+	}
+	#main_header .profile-thumbnail {
+		position: relative;
+		top: .25rem;
+		right: 1rem;
+	}
 label[for="language_selector_select"] {
 	position: absolute;
 	top: 12px;
@@ -109,12 +118,29 @@ label[for="language_selector_select"] {
 	.sidebar .card .card-children ul li:first-child {
 		margin-right: 0;
 	}
+	.sidebar .card-children .child {
+		margin-bottom: .5rem;
+	}
+		.sidebar .card-children .child:last-child {
+			margin-bottom: 0;
+		}
+	.sidebar .card-children .child-meta {
+		position: relative;
+    	top: -.5rem;
+    	margin-left: 1rem;
+	}
+	.sidebar .card-children .child-meta ul {
+		text-align: left;
+	}
+		.sidebar .card-children .child-meta ul li {
+			display: block;
+		}
 
 
 .with-underline {
     border-bottom: 1px solid rgba(100,100,100,.1);
     padding-bottom: .5rem;
-    margin-bottom: .5rem;
+	margin-bottom: 1.5rem;
 }
 
 .content.cards {

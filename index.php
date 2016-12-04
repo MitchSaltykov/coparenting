@@ -1,3 +1,28 @@
+<?php
+
+if (!$user) {
+	$user = $_GET['user'];
+}
+
+if (!$page) {
+	$page = $_GET['page'];
+}
+
+switch ($user) {
+    case 'sw':
+        $title = 'Social Worker';
+        break;
+    case 'fp':
+        $title = 'Foster Parent';
+        break;
+    case 'bp':
+        $title = 'Biological Parent';
+        break;
+    default:
+    	$title = 'Social Worker';
+}
+
+?>
 <html>
 	<head>
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -79,80 +104,35 @@
 						<dots ng-show="showLoading"></dots>
 					</h1>
 				</li><!--
-			 --><li class="display-inline-block position-relative width-one-third text-align-right">
+			 --><li class="display-inline-block position-relative width-one-third text-align-right"><span class="welcome">Welcome, <?=$title ?></span><img src="http://placehold.it/20x20/" alt="profile pic" class="profile-thumbnail">
 				</li>
 			</ul>
 		</header>
 
 		<section class="clearfix" id="main">
-			<aside class="sidebar">
-				<nav>
-					<h3 class="font-weight-bold with-underline">My Cases</h3>
 
-					<div class="card child">
-						<ul>
-							<li class="card-title">The Whittacre Case</li>
-							<li class="parent">Mom: Julia Whittacre</li>
-							<li class="card-children">
-								<ul >
-									<li class="child">
-										<ul>
-											<li>
-												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
-											</li>
-											<li>Child Name</li>
-											<li>Date of Birth</li>
-											<li>Dad: n/a</li>
-										</ul>
-									</li>							
-									<li class="child">
-										<ul>
-											<li>
-												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
-											</li>
-											<li>Child Name</li>
-											<li>Date of Birth</li>
-											<li>Dad: n/a</li>
-										</ul>
-									</li>							
-									<li class="child">
-										<ul>
-											<li>
-												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
-											</li>
-											<li>Child Name</li>
-											<li>Date of Birth</li>
-											<li>Dad: n/a</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="card child">
-						<a href="">Expand</a>
-					</div>
-					<div class="card child">
-						<a href="">Expand</a>
-					</div>
-					<div class="card child">
-						<a href="">Expand</a>
-					</div>
-				</nav>
-			</aside>
+			<?php include('sidebar.html'); ?>
 
-			<?php include('upcoming_visitations.html'); ?>
+			<?php if ($user == 'bp') {
+				include('upcoming_visitations.html');
+			} ?>
 
-			<?php include('relationships_list.php'); ?>
+			<?php if ($user == 'bp') {
+				include('news_feed.html');
+			} ?>
 
-			<section class="content">
-				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
-				<p class="font-size-medium line-height-single">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla venenatis metus, at tincidunt nunc. Nullam nisi ligula, cursus in risus sed, blandit gravida quam. Phasellus blandit ultricies ex sed mollis. Morbi in nibh pharetra, varius ex varius, auctor tellus. Vestibulum placerat dictum tellus in viverra. Nullam nisl orci, consequat quis auctor non, gravida ut velit. Quisque tempor ut nisl at tempor. Nam euismod sed enim sit amet convallis.</p>
+			<?php if ($user == 'bp' && $page == 'message_list') {
+				include('message_list.html');
+			} ?>
 
-				<br>
+			<?php if ($user == 'bp' && $page == 'message') {
+				include('message.html');
+			} ?>
 
-				<p class="font-size-medium line-height-single">Fusce vestibulum pulvinar maximus. Sed ultrices scelerisque ullamcorper. Nullam leo tortor, suscipit sit amet euismod vulputate, porta et velit. Proin tempus faucibus lectus sed mollis. Ut arcu nisl, pharetra in pretium ac, euismod et mi. Fusce luctus dui tempor, sagittis quam ac, maximus dui. Proin blandit, lectus nec bibendum tincidunt, augue velit luctus sapien, lobortis pharetra elit sapien sed felis. Sed ullamcorper magna nec arcu pretium finibus. Ut interdum viverra leo ut blandit. Fusce tincidunt, est ac eleifend venenatis, nisl urna accumsan odio, ac sagittis quam sem in quam. Sed efficitur, est id fermentum suscipit, enim lectus molestie felis, et elementum libero ex et justo. Donec at mollis erat, volutpat ullamcorper sem. In auctor nibh magna, molestie dictum neque lacinia sed. Quisque ex ipsum, euismod sit amet aliquam et, aliquet sed urna. Quisque sagittis massa faucibus enim placerat porta.</p>
-			</section>
+			<?php if ($user == 'sw') {
+				include('relationships_list.php');
+			} ?>
+
 		</section>
 
 		<hr>
@@ -160,9 +140,9 @@
 		<footer class="text-align-center">
 			<nav id="tertiary" class="padding-1em">
 				<ul class="nav-stackable with-pipes">
-					<li><a href="" title="" class="font-size-medium">Home</a></li><!--
-				 --><li><a href="" title="" class="font-size-medium">About</a></li><!--
-			     --><li><a href="#" title="" class="font-size-medium" onclick="APP.showOverlay()">F.A.Q.</a></li>
+					<li><a href="?user=bp&page=message_list" title="" class="font-size-medium">Messages</a></li><!--
+				 --><li><a href="" title="" class="font-size-medium">Events</a></li><!--
+			     --><li><a href="#" title="" class="font-size-medium" onclick="APP.showOverlay()">Child Profiles</a></li>
 				</ul>
 			</nav>
 			<span class="copyright display-block padding-1em font-size-medium">&copy; 2016 Coparenting</span>
