@@ -53,4 +53,19 @@
 		<button onclick="APP.submitVisit()" class="btn">Propose</button>
 		<button class="btn">Cancel</button>
 	</div>
+
+	<script>
+		var setName = function() { document.getElementById("name").value = "Girls' day out" }
+		var setType = function() { document.getElementById("type").value = "Social" }
+		var setDescription = function() {
+			document.getElementById("description").value = "Going out to get our nails and hair done together."
+		}
+		var setWith2 = function() {
+			document.getElementById("with_2").checked = true
+		}
+		setTimeout(setName, 250)
+		setTimeout(setType, 500)
+		setTimeout(setDescription, 750)
+		setTimeout(setWith2, 1000)
+	</script>
 </div>

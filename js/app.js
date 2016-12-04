@@ -61,12 +61,20 @@ APP.dataModels = {
 	},
 	'event_planning': {
 		child: [{
+			id: 1,
 			child_name: 'Jimmy',
 			foster_family_surname: 'Smiths'
 		}, {
+			id: 2,
 			child_name: 'Susie',
 			foster_family_surname: 'Jones'
-		}]
+		}],
+		event_type: [
+			{ name: '' },
+			{ name: 'Social' },
+			{ name: 'Parent skill building' },
+			{ name: 'Doctor' },
+		]
 	},
 	'relationships_list': {
 
