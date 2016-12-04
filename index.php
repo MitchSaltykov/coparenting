@@ -1,7 +1,11 @@
 <?php
 
 if (!$user) {
-	$user = $_GET['user'];
+	if ($_GET['user']) {
+		$user = $_GET['user'];		
+	} else {
+		$user = 'bp';
+	}
 }
 
 if (!$page) {
