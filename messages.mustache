@@ -6,7 +6,7 @@
 	{{#each message}}
 		{{#if incoming_message}}
 			<div style="padding: 10px" align="left">
-				<div align="right"><em>{{timestamp}}</em></div>
+				<div align="left"><em>{{timestamp}}</em></div>
 				<div style="background-color: #F9DBBD; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
 					{{#if image}}
 						<div align="center"><img src="{{image}}"/></div>
@@ -16,10 +16,12 @@
 			</div>
 		{{else}}
 			<div style="padding: 10px" align="right">
-				<div align="left"><em>{{timestamp}}</em></div>
+				<div align="right"><em>{{timestamp}}</em></div>
 				<div style="background-color: #D0C4DF; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
 					{{#if image}}
-						<div align="center"><img src="{{image}}"/></div>
+						<div align="center">
+							<img src="{{image}}" style="max-width:100%; max-height:100%;"/>
+						</div>
 					{{/if}}
 					{{text}}
 				</div>
