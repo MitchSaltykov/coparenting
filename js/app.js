@@ -180,4 +180,19 @@ APP.profileBuilt = function profileBuilt() {
 
 APP.goToRelationshipsList = function goToRelationshipsList() {
 	window.location.href = '?user=sw&page=relationships_list&case_id=1';
-}
+};
+
+APP.lockScreen = function lockScreen() {
+	document.getElementById('lock_screen').style.display = 'none';
+};
+
+APP.iAttended = function iAttended(event) {
+	event.preventDefault();
+	document.getElementById('attended').style.display = 'block';
+};
+
+APP.iCouldntMakeIt = function iCouldntMakeIt(event) {
+	event.preventDefault();
+	document.getElementById('did_not_attend').style.display = 'block';
+};
+

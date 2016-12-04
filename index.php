@@ -120,9 +120,7 @@ switch ($user) {
 			</aside>
 
 			<?php if ($user == 'bp' && empty($page)) {
-
 				include('upcoming_visitations.php');
-
 			?>
 			<hr>
 
@@ -137,6 +135,11 @@ switch ($user) {
 
 			<?php if ($user == 'bp' && $page == 'message') {
 				include('message.html');
+			} ?>
+
+			<?php if ($user == 'bp' && $page == 'event_review') {
+				echo '<img src="img/lock_screen.png" id="lock_screen" style="z-index: 100000000; position: fixed;width:100%;top:0" onclick="APP.lockScreen()">';
+				include('hardcoded_html/event_review.html');
 			} ?>
 
 			<?php if ($user == 'sw' && empty($page)) {
