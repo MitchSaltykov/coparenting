@@ -3,8 +3,15 @@
 	border: 0;
 	margin: 0;
 }
+
 input[type="submit"].btn,
-button.btn {
+button.btn,
+a.btn {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #eeeeee;
+	line-height: 44px;
 	height: 44px;
 	-webkit-appearance: none;
 	-webkit-border-radius: 10px; 

@@ -2,7 +2,7 @@
 
 window.APP = {};
 
-APP.showOverlay = function() {
+APP.showOverlay = function showOverlay(id) {
 	var overlay = document.getElementById('overlay');
 
 	var overlayChild = overlay.querySelector('.overlay-child');
