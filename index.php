@@ -113,15 +113,15 @@ switch ($user) {
 
 			<?php include('sidebar.html'); ?>
 
-			<?php if ($user == 'bp') {
+			<?php if ($user == 'bp' && empty($page)) {
 				include('upcoming_visitations.html');
 			} ?>
 
-			<?php if ($user == 'bp') {
+			<?php if ($user == 'bp' && empty($page)) {
 				include('news_feed.html');
 			} ?>
 
-			<?php if ($user == 'bp' && $page == 'message_list') {
+			<?php if ($user == 'bp' && $page == 'messages') {
 				include('message_list.html');
 			} ?>
 
@@ -140,9 +140,9 @@ switch ($user) {
 		<footer class="text-align-center">
 			<nav id="tertiary" class="padding-1em">
 				<ul class="nav-stackable with-pipes">
-					<li><a href="?user=bp&page=message_list" title="" class="font-size-medium">Messages</a></li><!--
-				 --><li><a href="" title="" class="font-size-medium">Events</a></li><!--
-			     --><li><a href="#" title="" class="font-size-medium" onclick="APP.showOverlay()">Child Profiles</a></li>
+					<li><img src="fnt/Entypo+/chat.svg" class="chat"><a href="?user=bp&page=messages" title="" class="font-size-medium">Messages</a></li><!--
+				 --><li><img src="fnt/Entypo+/calendar.svg" class="calendar"><a href="" title="" class="font-size-medium">Events</a></li><!--
+			     --><li><img src="fnt/Entypo+/man.svg" class="man"><a href="" title="" class="font-size-medium">Child Profiles</a></li>
 				</ul>
 			</nav>
 			<span class="copyright display-block padding-1em font-size-medium">&copy; 2016 Coparenting</span>

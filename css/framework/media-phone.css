@@ -127,6 +127,19 @@
 				.with-pipes > li:last-child {
 					border-right: none;
 				}
+				.with-pipes > li a {
+					position: relative;
+					text-decoration: none;
+					font-size: 12px;
+					margin-bottom: 0;
+					bottom: -7px;
+				}
+				.with-pipes img {
+					width: 30px;
+				    height: 30px;
+				    position: relative;
+				    top: 15px;
+				}
 		.sidebar {
 			display: none;
 		}
