@@ -2,7 +2,60 @@
 
 window.APP = {};
 
-APP.showOverlay = function showOverlay(id) {
+APP.dataModels = {
+	'child_info': {
+		child_name: 'Luke',
+		allergy: [{
+			allergen_id: 'Allergy 1',
+			is_allergic: true,
+			name: 'Pollen'
+		}, {
+			allergen_id: 'Allergy 2',
+			is_allergic: false,
+			name: 'Dander'
+		}],
+		morning_routine: 'Luke likes to wake up at 8am.',
+		evening_routine: 'Luke goes to bed before 11pm every night.',
+		overall_goal: 'Do a good job today'
+	},
+	'permissions': {
+		parent: [{
+			parent_name: 'Person 1'
+		}, {
+			parent_name: 'Person 2'
+		}],
+		foster_family: [{
+			id: 123,
+			approved: true,
+			surname_plural: 'Whittacres'
+		}, {
+			id: 456,
+			approved: true,
+			surname_plural: 'Joneses'
+		}],
+		supervised_visits_approved: true,
+		unsupervised_visits_approved: true
+	},
+	'event_planning': {
+
+	},
+	'relationships_list': {
+
+	},
+	'upcoming_visitations': {
+
+	}
+};
+
+APP.showOverlay = function showOverlay(templateId) {
+	if (!templateId) return;
+
+	var context = APP.dataModels[templateId];
+
+	if (!context) return;
+
+	APP.loadTemplate(templateId, context);
+
 	var overlay = document.getElementById('overlay');
 
 	var overlayChild = overlay.querySelector('.overlay-child');
@@ -23,28 +76,14 @@ APP.closeOverlay = function closeOverlay(id) {
 	overlay.style.display = 'none';
 }
 
-var source = document.getElementById('child_info').innerHTML;
+APP.loadTemplate = function loadTemplate(templateId, context) {
+	var source = document.getElementById(templateId).innerHTML;
 
-var template = Handlebars.compile(source);
+	var template = Handlebars.compile(source);
 
-var context = {
-	child_name: 'Luke',
-	allergy: [{
-		allergen_id: 'Allergy 1',
-		is_allergic: true,
-		name: 'Pollen'
-	}, {
-		allergen_id: 'Allergy 2',
-		is_allergic: false,
-		name: 'Dander'
-	}],
-	morning_routine: 'Luke likes to wake up at 8am.',
-	evening_routine: 'Luke goes to bed before 11pm every night.',
-	overall_goal: 'Do a good job today'
-};
+	var html = template(context);
 
-var html = template(context);
+	var overlay = document.getElementById('overlay').querySelector('.overlay-child');
 
-var overlay = document.getElementById('overlay').querySelector('.overlay-child');
-
-overlay.innerHTML = html;
+	overlay.innerHTML = html;
+}

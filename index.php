@@ -236,42 +236,7 @@ switch ($user) {
 		</script>
 
 		<script id="permissions" type="text/html">
-			<div class="content narrow">
-				{{#each parent}}
-					<div style='padding: 10px; clear:left' class="name">
-					Parent's Name:
-					<em>{{parent_name}}</em>
-				</div>
-
-					<div style='padding: 10px; width: 40%; float: left; inline'>
-						Communication allowed?
-					{{#each foster_family}}
-						<div>
-							{{#if approved}}
-								<input type="checkbox" name="foster_family_{{id}}_communication_approved" checked="{{approved}}"/>
-							{{else}}
-								<input type="checkbox" name="foster_family_{{id}}_communication_approved"/>
-							{{/if}}
-							<label for="foster_family_{{id}}_communication_approved">the <em>{{surname_plural}}</em></label>
-						</div>
-					{{/each}}
-				</div>
-
-				<div style='padding: 10px'>
-					Visitations approved?
-					<div>
-						<div><input type="checkbox" checked="{{supervised_visits_approved}}">Supervised</div>
-						<div><input type="checkbox" checked="{{unsupervised_visits_approved}}">Unsupervised</div>
-					</div>
-				</div>
-				{{/each}}
-
-				<div style='clear:left' align="center">
-					<hr/>
-					<button>Save</button>
-					<button>Cancel</button>
-				</div>
-			</div>
+		<?php include('permissions.mustache') ?>
 		</script>
 
 		<script src="js/app.js"></script>
