@@ -43,21 +43,38 @@ APP.dataModels = {
 	},
 	'permissions': {
 		parent: [{
-			parent_name: 'Person 1'
+			parent_name: 'Ana',
+			foster_family: [{
+				id: 123,
+				approved: true,
+				surname_plural: 'Whittacres',
+				supervised_visits_approved: true,
+				unsupervised_visits_approved: false
+			}, {
+				id: 456,
+				approved: true,
+				surname_plural: 'Joneses',
+				supervised_visits_approved: true,
+				unsupervised_visits_approved: false
+			}]
 		}, {
-			parent_name: 'Person 2'
-		}],
-		foster_family: [{
-			id: 123,
-			approved: true,
-			surname_plural: 'Whittacres'
-		}, {
-			id: 456,
-			approved: true,
-			surname_plural: 'Joneses'
+			parent_name: 'Francisco',
+			foster_family: [{
+				id: 123,
+				approved: true,
+				surname_plural: 'Whittacres',
+				supervised_visits_approved: true,
+				unsupervised_visits_approved: false
+			}, {
+				id: 456,
+				approved: true,
+				surname_plural: 'Joneses',
+				supervised_visits_approved: true,
+				unsupervised_visits_approved: false
+			}]
 		}],
 		supervised_visits_approved: true,
-		unsupervised_visits_approved: true
+		unsupervised_visits_approved: false
 	},
 	'event_planning': {
 		child: [{

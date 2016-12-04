@@ -129,7 +129,7 @@ switch ($user) {
 			} ?>
 
 			<?php if ($user == 'bp' && $page == 'messages') {
-				include('message_list.html');
+				include('hardcoded_html/messages.html');
 			} ?>
 
 			<?php if ($user == 'bp' && $page == 'message') {

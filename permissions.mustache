@@ -1,36 +1,32 @@
 <div class="content">
 	{{#each parent}}
-		<div style='padding: 10px; clear:both' class="name">
+		<div class="name">
 		Parent's Name:
 		<em>{{parent_name}}</em>
 	</div>
 
-		<div style='padding: 10px; width: 40%; float: left; inline'>
-			Communication allowed?
+	<br>
+
+	<div class="full-width">
+		Communication allowed?
 		{{#each foster_family}}
-			<div>
-				{{#if approved}}
-					<input type="checkbox" name="foster_family_{{id}}_communication_approved" checked="{{approved}}"/>
-				{{else}}
-					<input type="checkbox" name="foster_family_{{id}}_communication_approved"/>
-				{{/if}}
-				<label for="foster_family_{{id}}_communication_approved">the <em>{{surname_plural}}</em></label>
-			</div>
+			<div><input type="checkbox" checked>With the {{surname_plural}}</div>
 		{{/each}}
 	</div>
 
-	<div>
+	<br>
+
+	<div class="full-width">
 		Visitations approved?
-		<div>
-			<div><input type="checkbox" checked="{{supervised_visits_approved}}">Supervised</div>
-			<div><input type="checkbox" checked="{{unsupervised_visits_approved}}">Unsupervised</div>
-		</div>
+		<div><input type="checkbox" checked>Supervised</div>
+		<div><input type="checkbox" id="andrea_{{parent_name}}"><label for="andrea_{{parent_name}}">Unsupervised</label></div>
 	</div>
+
+	<hr>
 	{{/each}}
 
 	<div style='clear:both' align="center">
-		<hr/>
-		<button>Save</button>
-		<button>Cancel</button>
+		<button class="btn" onclick="APP.closeOverlay()">Save</button>
+		<button class="btn">Cancel</button>
 	</div>
 </div>
