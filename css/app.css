@@ -178,7 +178,7 @@ label[for="language_selector_select"] {
 
 .horizontal-scroll-outer {
 	overflow: scroll;
-	width: 500px;
+	width: 100%;
 }
 	.horizontal-scroll-inner {
 		width: 1600px;
