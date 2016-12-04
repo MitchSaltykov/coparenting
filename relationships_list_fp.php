@@ -1,4 +1,7 @@
 <h2 class="content text-align-center page-heading with-underline">Relationships</h2>
+
+include('upcoming_visitations.php');
+
 <ul class="content cards">
 	<li class="card">
 		<ul>
