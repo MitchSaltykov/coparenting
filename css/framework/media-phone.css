@@ -72,6 +72,10 @@
 		input[type="submit"].btn {
 			width: 100%;
 		}
+
+		.with-pipes img {
+			display: none;
+		}
 /*}*/
 
 /* desktop */

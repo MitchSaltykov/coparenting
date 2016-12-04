@@ -151,9 +151,10 @@ switch ($user) {
 		</footer>
 
 		<overlay class="overlay" style="display: none;" id="overlay">
-			<div class="overlay-child narrow-width margin-0-auto padding-2em-1em bg-white">
-				<h2 class="font-size-large font-weight-bold line-height-triple">Loading...</h2>
-				<p class="font-size-medium line-height-single">We thank you for patience while we load your entertainment for this evening.</p>
+			<div class="overlay-content narrow-width margin-0-auto padding-2em-1em bg-white">
+				<div class="overlay-child">
+				</div>
+				<button class="btn-with-icon btn-close" onclick="APP.closeOverlay()"><img src="fnt/Entypo+/circle-with-cross.svg" alt="cross" class="circle-with-cross icon"></button>
 			</div>
 		</overlay>
 

@@ -17,6 +17,12 @@ APP.showOverlay = function showOverlay(id) {
 	});
 };
 
+APP.closeOverlay = function closeOverlay(id) {
+	var overlay = document.getElementById('overlay');
+
+	overlay.style.display = 'none';
+}
+
 var source = document.getElementById('child_info').innerHTML;
 
 var template = Handlebars.compile(source);
@@ -39,6 +45,6 @@ var context = {
 
 var html = template(context);
 
-var overlay = document.getElementById('overlay');
+var overlay = document.getElementById('overlay').querySelector('.overlay-child');
 
 overlay.innerHTML = html;
