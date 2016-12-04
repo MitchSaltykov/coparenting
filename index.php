@@ -141,7 +141,7 @@ switch ($user) {
 			<nav id="tertiary" class="padding-1em">
 				<ul class="nav-stackable with-pipes">
 					<li><img src="fnt/Entypo+/chat.svg" class="chat"><a href="?user=bp&page=messages" title="" class="font-size-medium">Messages</a></li><!--
-				 --><li><img src="fnt/Entypo+/calendar.svg" class="calendar"><a href="" title="" class="font-size-medium">Events</a></li><!--
+				 --><li><img src="fnt/Entypo+/calendar.svg" class="calendar"><a href="?user=bp" title="" class="font-size-medium">Events</a></li><!--
 			     --><li><img src="fnt/Entypo+/man.svg" class="man"><a href="" title="" class="font-size-medium">Child Profiles</a></li>
 				</ul>
 			</nav>

@@ -192,7 +192,16 @@ label[for="language_selector_select"] {
 			}
 		.card.calendar .calendar-image {
 			margin: .5rem 0;
+			position: relative;
 		}
+			.card.calendar .calendar-image .number {
+				position: absolute;
+			    font-size: 48px;
+			    top: 53px;
+			    left: 17px;
+			    display: inline-block;
+			    width: 84px;
+			}
 		.content.news {
 			padding: 1rem;
 		}
