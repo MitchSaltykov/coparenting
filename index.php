@@ -87,24 +87,7 @@
 		<section class="clearfix" id="main">
 			<aside class="sidebar">
 				<nav>
-					<div>
-						<h3 class="font-weight-bold with-underline">General</h3>
-						<ul class="">
-							<li><a href="" class="">Home</a></li>
-							<li><a href="" class="">Playlists</a></li>
-							<li><a href="" class="">Change Language</a></li>
-						</ul>
-					</div>
-					<br>
-					<div>
-						<h3 class="font-weight-bold with-underline">My Cases</h3>
-						<ul class="">
-							<li><a href="" class="">Julia Whittacre</a></li>
-							<li><a href="" class="">Julia Whittacre</a></li>
-							<li><a href="" class="">Julia Whittacre</a></li>
-						</ul>
-					</div>
-					<br>
+					<h3 class="font-weight-bold with-underline">My Cases</h3>
 
 					<div class="card child">
 						<ul>
@@ -131,35 +114,36 @@
 											<li>Date of Birth</li>
 											<li>Dad: n/a</li>
 										</ul>
+									</li>							
+									<li class="child">
+										<ul>
+											<li>
+												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
+											</li>
+											<li>Child Name</li>
+											<li>Date of Birth</li>
+											<li>Dad: n/a</li>
+										</ul>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
-
-					<div>
-						<h3 class="font-weight-bold with-underline">My Account</h3>
-						<ul class="">
-							<li><a href="" class="">My Preferences</a></li>
-							<li><a href="" class="">Change Password</a></li>
-							<li><a href="" class="">Change Email</a></li>
-							<li><a href="" class="">Log Out</a></li>
-						</ul>
+					<div class="card child">
+						<a href="">Expand</a>
 					</div>
-					<br>
-					<div>
-						<h3 class="font-weight-bold with-underline">Help</h3>
-						<ul class="">
-							<li><a href="" class="">F.A.Q.</a></li>
-							<li><a href="" class="">Contact Us</a></li>
-						</ul>
+					<div class="card child">
+						<a href="">Expand</a>
+					</div>
+					<div class="card child">
+						<a href="">Expand</a>
 					</div>
 				</nav>
 			</aside>
 
 			<?php include('upcoming_visitations.html'); ?>
 
-			<?php include('relationships.html'); ?>
+			<?php include('relationships_list.php'); ?>
 
 			<section class="content">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
