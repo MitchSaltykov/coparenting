@@ -295,7 +295,6 @@
 		</overlay>
 
 		<script src="js/vendor/handlebars-v4.0.5.js"></script>
-		<script src="js/app.js"></script>
 
 		<script id="child_info" type="text/html">
 
@@ -326,5 +325,109 @@
 			</div>
 
 		</script>
+
+		<script id="event_planning" type="text/html">
+			<div class="content">
+				<div style='padding: 10px' class="name">
+					Event Name:
+					<input value="{{event_name}}"/>
+				</div>
+				<div style='padding: 10px' class="name">
+					Event type: 
+					<select>
+						{{#each event_type}}
+							{{#if selected}}
+								<option selected="selected">{{name}}</option>
+							{{else}}
+								<option>{{name}}</option>
+							{{/if}}
+						{{/each}}
+					</select>
+				</div>
+
+				<div style='padding: 10px' class="name">
+					<div>Description:</div>
+					<textarea rows="5" cols="50">{{description}}</textarea>
+				</div>
+				<div style='padding: 10px'>
+					With:
+					<ul>
+						{{#each child}}
+							<li style="padding: 0.1rem"><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
+								<em>{{foster_family_surname}}</em>)
+							</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</script>
+
+		<script id="messages" type="text/html">
+			<div class="content">
+				<div style='padding: 10px' class="name">
+					with the <em>{{foster_family_surname}}</em>
+				</div>
+
+				{{#each message}}
+					<div style="padding: 10px">
+						{{#if incoming_message}}
+							<div align="right"><em>{{timestamp}}</em></div>
+							<div style="background-color: #F9DBBD; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+								{{text}}
+							</div>
+						{{else}}
+							<div align="left"><em>{{timestamp}}</em></div>
+							<div style="background-color: #D0C4DF; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+								{{text}}
+							</div>
+						{{/if}}
+					</div>
+				{{/each}}
+				<div style='padding: 10px' class="name">
+					<textarea rows="15" cols="50"></textarea>
+				</div>
+			</div>
+		</script>
+
+		<script id="permissions" type="text/html">
+			<div class="content">
+				{{#each parent}}
+					<div style='padding: 10px; clear:left' class="name">
+					Parent's Name:
+					<em>{{parent_name}}</em>
+				</div>
+
+					<div style='padding: 10px; width: 40%; float: left; inline'>
+						Communication allowed?
+					{{#each foster_family}}
+						<div>
+							{{#if approved}}
+								<input type="checkbox" name="foster_family_{{id}}_communication_approved" checked="{{approved}}"/>
+							{{else}}
+								<input type="checkbox" name="foster_family_{{id}}_communication_approved"/>
+							{{/if}}
+							<label for="foster_family_{{id}}_communication_approved">the <em>{{surname_plural}}</em></label>
+						</div>
+					{{/each}}
+				</div>
+
+				<div style='padding: 10px'>
+					Visitations approved?
+					<div>
+						<div><input type="checkbox" checked="{{supervised_visits_approved}}">Supervised</div>
+						<div><input type="checkbox" checked="{{unsupervised_visits_approved}}">Unsupervised</div>
+					</div>
+				</div>
+				{{/each}}
+
+				<div style='clear:left' align="center">
+					<hr/>
+					<button>Save</button>
+					<button>Cancel</button>
+				</div>
+			</div>
+		</script>
+
+		<script src="js/app.js"></script>
 	</body>
 </html>
