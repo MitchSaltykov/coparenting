@@ -61,7 +61,6 @@ switch ($user) {
 				<li class="display-inline-block width-one-third text-align-left hamburger">
 					<form>
 						<label for="nav_primary_toggle" class="media-mobile white touch-height touch-width"></label>
-						<span class="circle notification">1</span>
 		 				<input type="checkbox" class="nav-collapsible-toggle media-mobile touch-height touch-width is-hidden-via-opacity" name="nav_primary_toggle" id="nav_primary_toggle">
 						<nav class="slidepanel left with-transition font-size-medium bg-gray text-align-left">
 							<div>
@@ -99,9 +98,9 @@ switch ($user) {
 						</nav>
 					</form>
 				</li><!--
-			 --><li class="display-inline-block width-one-third middle text-align-center">
+			 --><li class="display-inline-block width-one-third middle text-align-center" id="tackle_me">
 					<h1>
-						<a href="" title="Home" class="text-decoration-none" id="logo">COPARENTING</a>
+						<a href="?user=<?=$user ?>" title="Home" class="text-decoration-none" id="logo">PAIRED PARENTING</a>
 						<dots ng-show="showLoading"></dots>
 					</h1>
 				</li><!--
@@ -140,9 +139,11 @@ switch ($user) {
 				include('sw_welcome.html');
 			} elseif ($user == 'sw' && $page = 'relationships_list') {
 				include('relationships_list.php');
-			} elseif ($user == 'fp') {
-				include('relationship_list_fp.php');
-			}?>
+			} ?>
+
+			<?php if ($user == 'fp') {
+				include('relationships_list_fp.php');
+			} ?>
 
 		</section>
 
@@ -156,7 +157,7 @@ switch ($user) {
 			     --><li><img src="fnt/Entypo+/man.svg" class="man"><a href="" title="" class="font-size-medium">Child Profiles</a></li>
 				</ul>
 			</nav>
-			<span class="copyright display-block padding-1em font-size-medium">&copy; 2016 Coparenting</span>
+			<span class="copyright display-block padding-1em font-size-medium">&copy; 2016 Paired Parenting</span>
 		</footer>
 
 		<overlay class="overlay" style="display: none;" id="overlay">

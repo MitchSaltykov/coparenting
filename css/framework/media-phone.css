@@ -187,4 +187,12 @@
 					width: 33%;
 				}
 
+		#tackle_me {
+			width: 100%;
+		}
+
+		#main_header .profile-thumbnail {
+			display: none;
+		}
+
 }
