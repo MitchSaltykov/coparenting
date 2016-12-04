@@ -16,3 +16,32 @@ APP.showOverlay = function showOverlay(id) {
 		}
 	});
 };
+
+// var http = new XMLHttpRequest();
+// http.open('GET', 'child_info.html');
+// http.send();
+
+setTimeout(function() {
+	var source = document.getElementById('child_info').innerHTML;
+
+	var template = Handlebars.compile(source);
+
+	var context = {
+		child_name: 'Luke',
+		allergy: [{
+			allergen_id: 'Allergy 1',
+			is_allergic: true,
+			name: 'Pollen'
+		}, {
+			allergen_id: 'Allergy 2',
+			is_allergic: false,
+			name: 'Dander'
+		}]
+	};
+
+	var html = template(context);
+
+	var overlay = document.getElementById('overlay');
+
+	overlay.innerHTML = html;
+}, 0);

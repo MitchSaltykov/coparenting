@@ -297,9 +297,34 @@
 		<script src="js/vendor/handlebars-v4.0.5.js"></script>
 		<script src="js/app.js"></script>
 
-		<script id="child_info.mustache"></script>
-		<script id="event_planning.mustache"></script>
-		<script id="messages.mustache"></script>
-		<script id="permissions.mustache"></script>
+		<script id="child_info" type="text/html">
+
+			<div class="content">
+				<div style='padding: 10px' class="name">
+					Name:
+					<input value={{child_name}}/>
+				</div>
+
+				<div style='padding: 10px'>
+					Allergies:
+					{{#each allergy}}
+						<div>
+							<input type="checkbox" id="{{allergen_id}}" checked="{{is_allergic}}">
+							<label for="{{allergen_id}}">{{name}}</label>
+						</div>
+					{{/each}}
+				</div>
+
+				<div style='padding: 10px'>
+					Morning Routine:
+					<div><textarea rows="4" cols="50">{{morning_routine}}</textarea></div>
+				</div>
+				<div style='padding: 10px'>
+					Evening Routine:
+					<div><textarea rows="4" cols="50">{{evening_routine}}</textarea></div>
+				</div>
+			</div>
+
+		</script>
 	</body>
 </html>
