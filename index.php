@@ -74,9 +74,9 @@ switch ($user) {
 							<div>
 								<h3 class="bg-gray-e1e1e8 padding-0-1em font-weight-bold">My Cases</h3>
 								<ul class="gray-eeeeee padding-1em">
-									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Julia Whittacre</a></li>
-									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Julia Whittacre</a></li>
-									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Julia Whittacre</a></li>
+									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Ana Gutierrez</a></li>
+									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Ana Gutierrez</a></li>
+									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Ana Gutierrez</a></li>
 								</ul>
 							</div>
 							<div>
