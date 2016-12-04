@@ -21,4 +21,4 @@ Tianna invites the foster parents and biological parents to use Coparenting. Thi
 - stay involved with what happens in their children's lives during the removal
 - learn techniques from the foster parents that can help them be the best parents they can once they're reunited with their children
   
-As they biological parents and foster families chat, share updates, ask questions, and meet up, Tianna can monitor the conversation to see what works well, where there's room for more improvement, and how the Coparents can make the reunification a success.
+As the biological parents and foster families chat, share updates, ask questions, and meet up, Tianna can monitor the conversation to see what works well, where there's room for more improvement, and how the Coparents can make the reunification a success.
