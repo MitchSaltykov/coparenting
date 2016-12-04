@@ -1,11 +1,12 @@
 <div class="content">
-	<div style='padding: 10px' class="name">
+	{{#each parent}}
+		<div style='padding: 10px; clear:left' class="name">
 		Parent's Name:
 		<em>{{parent_name}}</em>
 	</div>
 
-	<div style='padding: 10px'>
-		Communication approved by Foster Families?
+		<div style='padding: 10px; width: 40%; float: left; inline'>
+			Communication allowed?
 		{{#each foster_family}}
 			<div>
 				{{#if approved}}
@@ -20,11 +21,16 @@
 
 	<div style='padding: 10px'>
 		Visitations approved?
-		<div><input type="checkbox" name="visitations_approved" checked="{{visitations_approved}}"/></div>
-
-		<div style="padding: 10px">
+		<div>
 			<div><input type="checkbox" checked="{{supervised_visits_approved}}">Supervised</div>
 			<div><input type="checkbox" checked="{{unsupervised_visits_approved}}">Unsupervised</div>
 		</div>
+	</div>
+	{{/each}}
+
+	<div style='clear:left' align="center">
+		<hr/>
+		<button>Save</button>
+		<button>Cancel</button>
 	</div>
 </div>
