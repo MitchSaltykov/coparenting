@@ -91,6 +91,11 @@
 /* phones */
 @media only screen 
 	and (max-width: 568px) {
+		#tertiary {
+			padding-top: 0;
+			padding-bottom: 0;
+			padding: 0;
+		}
 		.nav-stackable {
 			display: block;
 		}
@@ -110,6 +115,40 @@
 				}
 				.nav-stackable > li:last-child a{
 					border-bottom: 0;
+				}
+				.with-pipes > li {
+					border-right: 1px solid rgba(51, 51, 51, .1);
+					line-height: 44px;
+				}
+				.with-pipes > li:after {
+					content: none;
+				}
+				.with-pipes > li:last-child {
+					border-right: none;
+				}
+		.sidebar {
+			display: none;
+		}
+		.content {
+			width: 100%;
+			float: none;
+		}
+		.copyright {
+			display: none!important;
+		}
+		footer {
+			width: 100%;
+			display: block;
+			position: fixed;
+			bottom: 0;
+			background-color: #e6e6e6;
+		}
+			footer ul {
+				display: block;
+			}
+				footer ul li {
+					display: inline-block;
+					width: 33%;
 				}
 
 }
