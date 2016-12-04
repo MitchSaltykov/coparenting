@@ -8,11 +8,17 @@
 			{{#if incoming_message}}
 				<div align="right"><em>{{timestamp}}</em></div>
 				<div style="background-color: #F9DBBD; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+					{{#if image}}
+						<img src="{{image}}"/>
+					{{/if}}
 					{{text}}
 				</div>
 			{{else}}
 				<div align="left"><em>{{timestamp}}</em></div>
 				<div style="background-color: #D0C4DF; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+					{{#if image}}
+						<img src="{{image}}"/>
+					{{/if}}
 					{{text}}
 				</div>
 			{{/if}}
