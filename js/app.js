@@ -17,8 +17,10 @@ APP.dataModels = {
 			is_allergic: false,
 			name: 'Dander'
 		}],
-		morning_routine: 'Luke likes to wake up at 8am.',
-		evening_routine: 'Luke goes to bed before 11pm every night.',
+	morning_routine: 'Luke likes to wake up at 8am.',
+	afternoon_routine: "Gets very cranky if he's not ready for naptime by 12:30.",
+	bedtime_routine: 'Luke goes to bed before 11pm every night.',
+	overall_goal: 'Do a good job today'
 		overall_goal: 'Do a good job today'
 	},
 	'permissions': {
@@ -51,7 +53,7 @@ APP.dataModels = {
 };
 
 APP.showOverlay = function showOverlay(templateId) {
-	if (!templateId) {		
+	if (!templateId) {
 		alert('Coming soon.');
 
 		return;
