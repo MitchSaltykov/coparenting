@@ -102,6 +102,14 @@ label[for="language_selector_select"] {
 	.sidebar nav {
 		margin-top: 1rem;
 	}
+	.sidebar .card {
+		margin-right: 0;
+    	width: 100%;
+	}
+	.sidebar .card .card-children ul li:first-child {
+		margin-right: 0;
+	}
+
 
 .with-underline {
     border-bottom: 1px solid rgba(100,100,100,.1);

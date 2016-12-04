@@ -105,6 +105,38 @@
 						</ul>
 					</div>
 					<br>
+
+					<div class="card child">
+						<ul>
+							<li class="card-title">The Whittacre Case</li>
+							<li class="parent">Mom: Julia Whittacre</li>
+							<li class="card-children">
+								<ul >
+									<li class="child">
+										<ul>
+											<li>
+												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
+											</li>
+											<li>Child Name</li>
+											<li>Date of Birth</li>
+											<li>Dad: n/a</li>
+										</ul>
+									</li>							
+									<li class="child">
+										<ul>
+											<li>
+												<img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail">
+											</li>
+											<li>Child Name</li>
+											<li>Date of Birth</li>
+											<li>Dad: n/a</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
 					<div>
 						<h3 class="font-weight-bold with-underline">My Account</h3>
 						<ul class="">
@@ -125,144 +157,9 @@
 				</nav>
 			</aside>
 
-			<h2 class="content text-align-center page-heading with-underline">Upcoming Visitations</h2>
-			<div class="horizontal-scroll-outer">
-				<ul class="horizontal-scroll-inner">
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 6</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 9</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 10</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 16</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 20</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Dec 24</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Jan 2</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Jan 5</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Jan 8</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-					<li class="card calendar" onclick="APP.showOverlay()">
-						<ul>
-							<li class="calendar-date">Jan 12</li>
-							<li class="calendar-image"><img src="http://placehold.it/80x80/" alt="child"></li>
-							<li class="calendar-copy">Visitation</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<h2 class="content text-align-center page-heading with-underline">Relationships</h2>
-			<ul class="content cards">
-				<li class="card">
-					<ul>
-						<li class="card-title">Julia Whittacre + The Carsons</li>
-						<li class="card-children">
-							<ul>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-							</ul>
-						</li>
-						<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
-					</ul>
-				</li><!--
-			 --><li class="card">
-					<ul>
-						<li class="card-title">Julia Whittacre + The Carsons</li>
-						<li class="card-children">
-							<ul>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-							</ul>
-						</li>
-						<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
-					</ul>
-				</li><!--
-			 --><li class="card">
-					<ul>
-						<li class="card-title">Julia Whittacre + The Carsons</li>
-						<li class="card-children">
-							<ul>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-							</ul>
-						</li>
-						<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
-					</ul>
-				</li><!--
-			 --><li class="card">
-					<ul>
-						<li class="card-title">Julia Whittacre + The Carsons</li>
-						<li class="card-children">
-							<ul>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-							</ul>
-						</li>
-						<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
-					</ul>
-				</li><!--
-		     --><li class="card">
-					<ul>
-						<li class="card-title">Julia Whittacre + The Carsons</li>
-						<li class="card-children">
-							<ul>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-								<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
-							</ul>
-						</li>
-						<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
-					</ul>
-				</li>
-			</ul>
+			<?php include('upcoming_visitations.html'); ?>
+
+			<?php include('relationships.html'); ?>
 
 			<section class="content">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
