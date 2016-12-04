@@ -9,10 +9,12 @@
 			<li class="card-title">Macia Gutierrez</li>
 			<br>
 			<li class="card-parents">
-				<ul style="height: 150px;">
+				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="parent" class="profile-thumbnail"></li>
 					<li>Ana Gutierrez<br><span style="color:red">!</span><a href="?user=fp&page=messages">New message</a></li>
-					<li><img src="http://placehold.it/80x80/" alt="parent" class="profile-thumbnail">Francisco DuBuque</li>
+					<br>
+					<li><img src="http://placehold.it/80x80/" alt="parent" class="profile-thumbnail"></li>
+					<li>Francisco DuBuque</li>
 				</ul>
 			</li>
 		</ul>
@@ -25,6 +27,7 @@
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="parent" class="profile-thumbnail"></li>
 					<li>Samara Hudson</li>
+					<br>
 					<li><img src="http://placehold.it/80x80/" alt="parent" class="profile-thumbnail"></li>
 					<li>Francis Hudson</li>
 				</ul>
