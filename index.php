@@ -140,7 +140,7 @@ switch ($user) {
 				include('sw_welcome.html');
 			} elseif ($user == 'sw' && $page = 'relationships_list') {
 				include('relationships_list.php');
-			} elseif ($user == 'fp') {
+			} elseif ($user == 'fp' && $page = 'relationships_list') {
 				include('relationship_list_fp.php');
 			}?>
 
