@@ -141,9 +141,10 @@ switch ($user) {
 				include('relationships_list.php');
 			} ?>
 
-			<?php if ($user == 'fp') {
+			<?php
+			if ($user == 'fp' && $page = 'relationships_list') {
 				include('relationships_list_fp.php');
-			} ?>
+			}?>
 
 		</section>
 
