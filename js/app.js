@@ -31,7 +31,9 @@ var context = {
 		allergen_id: 'Allergy 2',
 		is_allergic: false,
 		name: 'Dander'
-	}]
+	}],
+	morning_routine: 'Luke likes to wake up at 8am.',
+	evening_routine: 'Luke goes to bed before 11pm every night.'
 };
 
 var html = template(context);

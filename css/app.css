@@ -80,6 +80,11 @@ label[for="language_selector_select"] {
 	width: 70%;
 	padding: 2rem;
 }
+	.overlay .content {
+		float: none;
+		width: 100%;
+		background-color: white;
+	}
 	.page-heading {
 		font-size: 2rem;
 	}

@@ -4,7 +4,8 @@
 	width: 100%;
 	display: block;
 }
-.narrow-width {
+.narrow-width,
+.narrow {
 	max-width: 700px;
 	margin: 0 auto;
 }

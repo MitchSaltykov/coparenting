@@ -298,14 +298,16 @@
 
 		<script id="child_info" type="text/html">
 
-			<div class="content">
-				<div style='padding: 10px' class="name">
-					Name:
-					<input value={{child_name}}/>
+			<div class="content narrow">
+				<div class="name">
+					<h4>Name:</h4>
+					<input value="{{child_name}}"/>
 				</div>
 
-				<div style='padding: 10px'>
-					Allergies:
+				<br>
+
+				<div>
+					<h4>Allergies:</h4>
 					{{#each allergy}}
 						<div>
 							<input type="checkbox" id="{{allergen_id}}" checked="{{is_allergic}}">
@@ -314,12 +316,17 @@
 					{{/each}}
 				</div>
 
-				<div style='padding: 10px'>
-					Morning Routine:
+				<br>
+
+				<div>
+					<h4>Morning Routine:</h4>
 					<div><textarea rows="4" cols="50">{{morning_routine}}</textarea></div>
 				</div>
-				<div style='padding: 10px'>
-					Evening Routine:
+
+				<br>
+
+				<div>
+					<h4>Evening Routine:</h4>
 					<div><textarea rows="4" cols="50">{{evening_routine}}</textarea></div>
 				</div>
 			</div>
@@ -327,12 +334,15 @@
 		</script>
 
 		<script id="event_planning" type="text/html">
-			<div class="content">
-				<div style='padding: 10px' class="name">
+			<div class="content narrow">
+				<div class="name">
 					Event Name:
 					<input value="{{event_name}}"/>
 				</div>
-				<div style='padding: 10px' class="name">
+
+				<br>
+
+				<div class="name">
 					Event type: 
 					<select>
 						{{#each event_type}}
@@ -345,15 +355,20 @@
 					</select>
 				</div>
 
-				<div style='padding: 10px' class="name">
+				<br>
+
+				<div class="name">
 					<div>Description:</div>
 					<textarea rows="5" cols="50">{{description}}</textarea>
 				</div>
-				<div style='padding: 10px'>
+
+				<br>
+
+				<div>
 					With:
 					<ul>
 						{{#each child}}
-							<li style="padding: 0.1rem"><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
+							<li><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
 								<em>{{foster_family_surname}}</em>)
 							</li>
 						{{/each}}
@@ -363,7 +378,7 @@
 		</script>
 
 		<script id="messages" type="text/html">
-			<div class="content">
+			<div class="content narrow">
 				<div style='padding: 10px' class="name">
 					with the <em>{{foster_family_surname}}</em>
 				</div>
@@ -390,7 +405,7 @@
 		</script>
 
 		<script id="permissions" type="text/html">
-			<div class="content">
+			<div class="content narrow">
 				{{#each parent}}
 					<div style='padding: 10px; clear:left' class="name">
 					Parent's Name:
