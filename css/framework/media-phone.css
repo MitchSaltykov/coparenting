@@ -144,6 +144,9 @@
 			.card:nth-child(odd) {
 				margin-right: 0;
 			}
+			.card.calendar {
+				padding-right: 1rem;
+			}
 		footer {
 			width: 100%;
 			display: block;

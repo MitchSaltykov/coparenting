@@ -136,6 +136,23 @@ label[for="language_selector_select"] {
 	.profile-thumbnail {
 		border-radius: 50%;
 	}
+
+.horizontal-scroll-outer {
+	overflow: scroll;
+	width: 500px;
+}
+	.horizontal-scroll-inner {
+		width: 1600px;
+	}
+		.card.calendar {
+			width: 150px;
+		}
+			.card.calendar:first-child {
+				margin-left: 1rem;
+			}
+		.card.calendar .calendar-image {
+			margin: .5rem 0;
+		}
 /* video */
 #video {
 	width: 100%;
