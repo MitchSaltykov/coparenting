@@ -119,4 +119,8 @@ APP.toggleDisplay = function toggleDisplay(event, toggleableGroupSelector) {
 	var newDisplay = toggleableStyle === 'none' ? 'block' : 'none';
 
 	toggleable.style.display = newDisplay;
+};
+
+APP.submitVisit = function submitVisit() {
+	window.location.href = '?user=bp&event_submitted=true';
 }

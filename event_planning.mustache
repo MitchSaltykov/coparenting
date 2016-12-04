@@ -1,10 +1,14 @@
 <div class="content">
-	<div style='padding: 10px' class="name">
-		Event Name:
-		<input value="{{event_name}}"/>
+	<div class="name">
+		Event Name:<br>
+		<input value="{{event_name}}" class="input-text/>
 	</div>
-	<div style='padding: 10px' class="name">
-		Event type: 
+
+	<br>
+	<br>
+
+	<div class="name">
+		<br><br>Event type:<br>
 		<select>
 			{{#each event_type}}
 				{{#if selected}}
@@ -16,11 +20,16 @@
 		</select>
 	</div>
 
-	<div style='padding: 10px' class="name">
+	<br>
+
+	<div class="name">
 		<div>Description:</div>
-		<textarea rows="5" cols="50">{{description}}</textarea>
+		<textarea rows="5" class="full-width textarea">{{description}}</textarea>
 	</div>
-	<div style='padding: 10px'>
+
+	<br>
+
+	<div>
 		With:
 		<ul>
 			{{#each child}}
@@ -33,7 +42,7 @@
 
 	<div style='clear:both' align="center">
 		<hr/>
-		<button>Propose</button>
+		<button onclick="APP.submitVisit()">Propose</button>
 		<button>Cancel</button>
 	</div>
 </div>

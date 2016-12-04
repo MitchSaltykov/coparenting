@@ -34,3 +34,10 @@ a.btn {
 		height: 20px;
 		position: relative;
 	}
+	.btn-with-icon-and-text img {
+		height: 20px;
+	    width: 20px;
+	    position: relative;
+	    top: 5px;
+	    left: -7px;
+	}

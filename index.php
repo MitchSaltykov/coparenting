@@ -116,9 +116,13 @@ switch ($user) {
 			</aside>
 
 			<?php if ($user == 'bp' && empty($page)) {
-				include('upcoming_visitations.html');
 
-				echo '<hr>';
+				include('upcoming_visitations.php');
+
+			?>
+			<hr>
+
+			<?php
 
 				include('news_feed.html');
 			} ?>
@@ -167,47 +171,7 @@ switch ($user) {
 		</script>
 
 		<script id="event_planning" type="text/html">
-			<div class="content narrow">
-				<div class="name">
-					Event Name:
-					<input value="{{event_name}}"/>
-				</div>
-
-				<br>
-
-				<div class="name">
-					Event type: 
-					<select>
-						{{#each event_type}}
-							{{#if selected}}
-								<option selected="selected">{{name}}</option>
-							{{else}}
-								<option>{{name}}</option>
-							{{/if}}
-						{{/each}}
-					</select>
-				</div>
-
-				<br>
-
-				<div class="name">
-					<div>Description:</div>
-					<textarea rows="5" cols="50">{{description}}</textarea>
-				</div>
-
-				<br>
-
-				<div>
-					With:
-					<ul>
-						{{#each child}}
-							<li><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
-								<em>{{foster_family_surname}}</em>)
-							</li>
-						{{/each}}
-					</ul>
-				</div>
-			</div>
+		<?php include('event_planning.mustache') ?>
 		</script>
 
 		<script id="messages" type="text/html">

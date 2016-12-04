@@ -335,3 +335,27 @@ label[for="language_selector_select"] {
 .flag-portugal {
 	background-position: 0 -110px;
 }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    5% {
+    	opacity: 0;
+    }
+    10% {
+    	opacity: 1;
+    }
+    60% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+.fade-in-and-out {
+    opacity: 0;
+   -webkit-animation: fadeInOut 8s;
+   animation: fadeInOut 8s;
+}

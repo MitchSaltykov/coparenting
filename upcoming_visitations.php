@@ -1,4 +1,10 @@
 <h2 class="content text-align-center page-heading with-underline">Upcoming Visitations</h2>
+<?php
+if ($_GET['event_submitted']) { ?>
+<div class="notification padding-left-1em fade-in-and-out">Visit proposed.</div>
+<br>
+<? }
+?>
 <div class="horizontal-scroll-outer">
 	<ul class="horizontal-scroll-inner">
 		<li class="card calendar" onclick="alert('Coming soon.')">
@@ -73,3 +79,7 @@
 		</li>
 	</ul>
 </div>
+
+<?php if ($_GET['allowed'] == 'true') { ?>
+<button class="btn display-block text-align-center btn-with-icon-and-text" style="margin: 0 auto;" onclick="APP.showOverlay('event_planning')"><img src="fnt/Entypo+/circle-with-plus.svg" class="icon circle-with-plus">Propose Visit</button>
+<?php } ?>
