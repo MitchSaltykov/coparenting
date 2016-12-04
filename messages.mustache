@@ -1,0 +1,24 @@
+<div class="content">
+	<div style='padding: 10px' class="name">
+		with the <em>{{foster_family_surname}}</em>
+	</div>
+
+	{{#each message}}
+		<div style="padding: 10px">
+			{{#if incoming_message}}
+				<div align="right"><em>{{timestamp}}</em></div>
+				<div style="background-color: #F9DBBD; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+					{{text}}
+				</div>
+			{{else}}
+				<div align="left"><em>{{timestamp}}</em></div>
+				<div style="background-color: #D0C4DF; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
+					{{text}}
+				</div>
+			{{/if}}
+		</div>
+	{{/each}}
+	<div style='padding: 10px' class="name">
+		<textarea rows="15" cols="50"></textarea>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="content">
+	<div style='padding: 10px' class="name">
+		Event Name:
+		<input value="{{event_name}}"/>
+	</div>
+	<div style='padding: 10px' class="name">
+		Event type: 
+		<select>
+			{{#each event_type}}
+				{{#if selected}}
+					<option selected="selected">{{name}}</option>
+				{{else}}
+					<option>{{name}}</option>
+				{{/if}}
+			{{/each}}
+		</select>
+	</div>
+
+	<div style='padding: 10px' class="name">
+		<div>Description:</div>
+		<textarea rows="5" cols="50">{{description}}</textarea>
+	</div>
+	<div style='padding: 10px'>
+		With:
+		<ul>
+			{{#each child}}
+				<li style="padding: 0.1rem"><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
+					<em>{{foster_family_surname}}</em>)
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
