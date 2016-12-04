@@ -1,7 +1,7 @@
 <div class="content">
 	<div class="name">
 		Event Name:<br>
-		<input value="{{event_name}}" class="input-text/>
+		<input id='name' value="{{event_name}}" class="input-text"/>
 	</div>
 
 	<br>
@@ -9,7 +9,7 @@
 
 	<div class="name">
 		<br><br>Event type:<br>
-		<select>
+		<select id='type'>
 			{{#each event_type}}
 				{{#if selected}}
 					<option selected="selected">{{name}}</option>
@@ -31,7 +31,7 @@
 
 	<div class="name">
 		<div>Description:</div>
-		<textarea rows="5" class="full-width textarea">{{description}}</textarea>
+		<textarea id='description' rows="5" class="full-width textarea">{{description}}</textarea>
 	</div>
 
 	<br>
@@ -40,7 +40,8 @@
 		With:
 		<ul>
 			{{#each child}}
-				<li style="padding: 0.1rem"><input type="checkbox" checked="{{chosen}}"/> {{child_name}} (with the
+				<li style="padding: 0.1rem"><input id="with_{{id}}" type="checkbox" checked="{{chosen}}"/> {{child_name}} (with
+					the
 					<em>{{foster_family_surname}}</em>)
 				</li>
 			{{/each}}

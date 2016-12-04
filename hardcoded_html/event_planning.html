@@ -1,29 +1,42 @@
 <div class="content">
 	<div style='padding: 10px' class="name">
 		Event Name:
-		<input value="Girls' day out"/>
+		<input id='name'/>
 	</div>
+
+	<br>
+	<br>
+
 	<div style='padding: 10px' class="name">
 		Event type:
-		<select>
+		<select id="type">
+			<option></option>
 			<option>Social</option>
 			<option>Parent skill building</option>
 			<option>Doctor</option>
 		</select>
 	</div>
 
+	<br>
+
 	<div style='padding: 10px' class="name">
 		<div>Description:</div>
-		<textarea rows="5" cols="50">Going out to get our nails and hair done together.</textarea>
+		<textarea id='description' rows="5" cols="50"></textarea>
 	</div>
+
+	<br>
+
 	<div style='padding: 10px'>
 		With:
 		<ul>
-			<li style="padding: 0.1rem"><input type="checkbox"/> Jon Reyes (with the <em>Chadwicks</em>)</li>
-			<li style="padding: 0.1rem"><input type="checkbox" checked="checked"/> Gladys Gutierrez(with the
-				<em>Chadwicks</em>)
+			<li style="padding: 0.1rem"><input id='with_1' type="checkbox"/>
+				Jon Reyes (with the <em>Chadwicks</em>)
 			</li>
-			<li style="padding: 0.1rem"><input type="checkbox" checked="checked"/> Macia Gutierrez (with the <em>Winters</em>)
+			<li style="padding: 0.1rem"><input id='with_2' type="checkbox"/>
+				Gladys Gutierrez(with the <em>Chadwicks</em>)
+			</li>
+			<li style="padding: 0.1rem"><input id='with_3' type="checkbox"/>
+				Macia Gutierrez (with the <em>Winters</em>)
 			</li>
 		</ul>
 	</div>
@@ -33,4 +46,24 @@
 		<button>Propose</button>
 		<button>Cancel</button>
 	</div>
+
+	<script>
+		var setName = function() { document.getElementById("name").value = "Girls' day out" }
+		var setType = function() { document.getElementById("type").value = "Social" }
+		var setDescription = function() {
+			document.getElementById("description").value = "Going out to get our nails and hair done together."
+		}
+		var setWith2 = function() {
+			document.getElementById("with_2").checked = true
+		}
+		var setWith3 = function() {
+			document.getElementById("with_3").checked = true
+		}
+		setTimeout(setName, 250)
+		setTimeout(setType, 500)
+		setTimeout(setDescription, 750)
+		setTimeout(setWith2, 1000)
+		setTimeout(setWith3, 1100)
+
+	</script>
 </div>
