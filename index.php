@@ -131,7 +131,9 @@ switch ($user) {
 
 			<?php if ($user == 'sw') {
 				include('relationships_list.php');
-			} ?>
+			} elseif ($user == 'fp') {
+				include('relationship_list_fp.php');
+			} )?>
 
 		</section>
 
