@@ -133,7 +133,7 @@ switch ($user) {
 				include('relationships_list.php');
 			} elseif ($user == 'fp') {
 				include('relationship_list_fp.php');
-			} )?>
+			}?>
 
 		</section>
 
@@ -160,40 +160,7 @@ switch ($user) {
 		<script src="js/vendor/handlebars-v4.0.5.js"></script>
 
 		<script id="child_info" type="text/html">
-
-			<div class="content narrow">
-				<div class="name">
-					<h4>Name:</h4>
-					<input value="{{child_name}}"/>
-				</div>
-
-				<br>
-
-				<div>
-					<h4>Allergies:</h4>
-					{{#each allergy}}
-						<div>
-							<input type="checkbox" id="{{allergen_id}}" checked="{{is_allergic}}">
-							<label for="{{allergen_id}}">{{name}}</label>
-						</div>
-					{{/each}}
-				</div>
-
-				<br>
-
-				<div>
-					<h4>Morning Routine:</h4>
-					<div><textarea rows="4" cols="50">{{morning_routine}}</textarea></div>
-				</div>
-
-				<br>
-
-				<div>
-					<h4>Evening Routine:</h4>
-					<div><textarea rows="4" cols="50">{{evening_routine}}</textarea></div>
-				</div>
-			</div>
-
+		<?php include('child_info.mustache') ?>
 		</script>
 
 		<script id="event_planning" type="text/html">

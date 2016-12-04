@@ -1,38 +1,39 @@
-<script id="child_info" type="text/html">
-
-	<div class="content">
-		<div style='padding: 10px' class="name">
-			Name:
-			<input value={{child_name}}/>
-		</div>
-
-		<div style='padding: 10px'>
-			Allergies:
-			{{#each allergy}}
-				<div>
-					<input type="checkbox" id="{{allergen_id}}" checked="{{is_allergic}}">
-					<label for="{{allergen_id}}">{{name}}</label>
-				</div>
-			{{/each}}
-		</div>
-
-		<div style='padding: 10px'>
-			Morning Routine:
-			<div><textarea rows="4" cols="50">{{morning_routine}}</textarea></div>
-		</div>
-		<div style='padding: 10px'>
-			Evening Routine:
-			<div><textarea rows="4" cols="50">{{evening_routine}}</textarea></div>
-		</div>
-		<div style='padding: 10px'>
-			Overall Goal
-			<div><textarea rows="5" cols="50">{{overall_goal}}</textarea></div>
-		</div>
+<div class="content narrow">
+	<div class="name">
+		<h4>Name:</h4>
+		<input value="{{child_name}}"/>
 	</div>
 
-	<div style='clear:both' align="center">
-		<hr/>
-		<button>Save</button>
-		<button>Cancel</button>
+	<br>
+
+	<div>
+		<h4>Allergies:</h4>
+		{{#each allergy}}
+			<div>
+				<input type="checkbox" id="{{allergen_id}}" checked="{{is_allergic}}">
+				<label for="{{allergen_id}}">{{name}}</label>
+			</div>
+		{{/each}}
 	</div>
-</script>
+
+	<br>
+
+	<div>
+		<h4>Morning Routine:</h4>
+		<div><textarea rows="4" cols="50">{{morning_routine}}</textarea></div>
+	</div>
+
+	<br>
+
+	<div>
+		<h4>Evening Routine:</h4>
+		<div><textarea rows="4" cols="50">{{evening_routine}}</textarea></div>
+	</div>
+
+	<br>
+
+	<div>
+		<h4>Overall Goal</h4>
+		<div><textarea rows="5" cols="50">{{overall_goal}}</textarea></div>
+	</div>
+</div>

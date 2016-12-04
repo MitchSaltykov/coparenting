@@ -33,7 +33,8 @@ var context = {
 		name: 'Dander'
 	}],
 	morning_routine: 'Luke likes to wake up at 8am.',
-	evening_routine: 'Luke goes to bed before 11pm every night.'
+	evening_routine: 'Luke goes to bed before 11pm every night.',
+	overall_goal: 'Do a good job today'
 };
 
 var html = template(context);
