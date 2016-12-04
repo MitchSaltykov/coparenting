@@ -2,7 +2,7 @@
 <ul class="content cards">
 	<li class="card">
 		<ul>
-			<li class="card-title">Ana Gutierrez + The Winters</li>
+			<li class="card-title">Ana Gutierrez <img src="figure8.png" width="50rem"> the Winters</li>
 			<li class="card-children">
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
@@ -14,7 +14,7 @@
 	</li><!--
  --><li class="card">
 		<ul>
-			<li class="card-title">Ana Gutierrez + The Winters</li>
+			<li class="card-title">Ana Gutierrez <img src="figure8.png" width="50rem"> the Winters</li>
 			<li class="card-children">
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
@@ -26,7 +26,7 @@
 	</li><!--
  --><li class="card">
 		<ul>
-			<li class="card-title">Ana Gutierrez + The Winters</li>
+			<li class="card-title">Ana Gutierrez <img src="figure8.png" width="50rem"> the Winters</li>
 			<li class="card-children">
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
@@ -38,7 +38,7 @@
 	</li><!--
  --><li class="card">
 		<ul>
-			<li class="card-title">Ana Gutierrez + The Winters</li>
+			<li class="card-title">Ana Gutierrez <img src="figure8.png" width="50rem"> the Winters</li>
 			<li class="card-children">
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
@@ -50,7 +50,7 @@
 	</li><!--
  --><li class="card">
 		<ul>
-			<li class="card-title">Ana Gutierrez + The Winters</li>
+			<li class="card-title">Ana Gutierrez <img src="figure8.png" width="50rem"> the Winters</li>
 			<li class="card-children">
 				<ul>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
