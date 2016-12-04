@@ -20,3 +20,6 @@ a.btn {
     font-size: .8rem;
     text-transform: uppercase;
 }
+a.btn {
+	display: inline-block!important;
+}

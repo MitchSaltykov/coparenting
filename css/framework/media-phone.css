@@ -134,6 +134,10 @@
 					margin-bottom: 0;
 					bottom: -7px;
 				}
+					.with-pipes > li a:active,
+					.with-pipes > li a:visited {
+						color: #333;
+					}
 				.with-pipes img {
 					width: 30px;
 				    height: 30px;

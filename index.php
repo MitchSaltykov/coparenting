@@ -115,9 +115,9 @@ switch ($user) {
 
 			<?php if ($user == 'bp' && empty($page)) {
 				include('upcoming_visitations.html');
-			} ?>
 
-			<?php if ($user == 'bp' && empty($page)) {
+				echo '<hr>';
+
 				include('news_feed.html');
 			} ?>
 

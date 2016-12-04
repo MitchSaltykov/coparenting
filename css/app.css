@@ -154,6 +154,7 @@ label[for="language_selector_select"] {
     margin-bottom: 1rem;
     background-color: white;
     display: inline-block;
+    position: relative;
 }
 	.card-title {
 		font-size: 1.3rem;
@@ -192,6 +193,17 @@ label[for="language_selector_select"] {
 		.card.calendar .calendar-image {
 			margin: .5rem 0;
 		}
+		.content.news {
+			padding: 1rem;
+		}
+		.card.news {
+			text-align: left;
+		}
+.top-right {
+	position: absolute;
+	top: 1rem;
+	right: .5rem;
+}
 /* video */
 #video {
 	width: 100%;
