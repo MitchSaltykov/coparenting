@@ -3,6 +3,9 @@
 window.APP = {};
 
 APP.dataModels = {
+	'default': {
+		message: 'Coming soon'
+	},
 	'child_info': {
 		child_name: 'Luke',
 		allergy: [{
@@ -48,7 +51,11 @@ APP.dataModels = {
 };
 
 APP.showOverlay = function showOverlay(templateId) {
-	if (!templateId) return;
+	if (!templateId) {		
+		alert('Coming soon.');
+
+		return;
+	}
 
 	var context = APP.dataModels[templateId];
 

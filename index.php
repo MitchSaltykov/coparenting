@@ -104,7 +104,7 @@ switch ($user) {
 						<dots ng-show="showLoading"></dots>
 					</h1>
 				</li><!--
-			 --><li class="display-inline-block position-relative width-one-third text-align-right"><span class="welcome">Welcome, <?=$title ?></span><img src="http://placehold.it/20x20/" alt="profile pic" class="profile-thumbnail">
+			 --><li class="display-inline-block position-relative width-one-third text-align-right"><span class="welcome">Welcome, <?=$title ?></span><img src="http://placehold.it/20x20/" alt="profile pic" class="profile-thumbnail" onclick="APP.showOverlay()">
 				</li>
 			</ul>
 		</header>
