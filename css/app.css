@@ -26,6 +26,9 @@ body.has-header-fixed .overlay {
 		margin-left: 40px;
 		font-size: 10px;
 	}
+	.hamburger form {
+		display: none;
+	}
 label[for="language_selector_select"] {
 	position: absolute;
 	top: 12px;

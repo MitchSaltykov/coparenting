@@ -91,6 +91,9 @@
 /* phones */
 @media only screen 
 	and (max-width: 568px) {
+		.hamburger form {
+			display: block;
+		}
 		#tertiary {
 			padding-top: 0;
 			padding-bottom: 0;
