@@ -1,6 +1,5 @@
 <html ng-controller="langwijController" ng-keyup="handleKeyup($event)">
 	<head>
-
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 		<meta name="viewport" content="initial-scale=1.0,width=320.1,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
@@ -22,7 +21,6 @@
 
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 		<link rel="stylesheet" type="text/css" href="css/framework/media-phone.css">
-
 	</head>
 	<body class="enhanced bg-white gray-333333 helvetica-neue has-header-fixed">
 
@@ -31,7 +29,7 @@
 				<li class="display-inline-block width-one-third text-align-left">
 					<form>
 						<label for="nav_primary_toggle" class="media-mobile white touch-height touch-width"></label>
-						<span class="circle notification" ng-if="notificationCenter.notificationCount">1</span>
+						<span class="circle notification">1</span>
 		 				<input type="checkbox" class="nav-collapsible-toggle media-mobile touch-height touch-width is-hidden-via-opacity" name="nav_primary_toggle" id="nav_primary_toggle">
 						<nav class="slidepanel left with-transition font-size-medium bg-gray text-align-left">
 							<div>
@@ -42,7 +40,7 @@
 									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">Change Language</a></li>
 								</ul>
 							</div>
-							<div ng-if="user.isSignedIn">
+							<div>
 								<h3 class="bg-gray-e1e1e8 padding-0-1em font-weight-bold">My Account</h3>
 								<ul class="gray-eeeeee padding-1em">
 									<li><a href="" class="gray-eeeeee text-decoration-none full-width touch-height">My Preferences</a></li>
@@ -63,7 +61,7 @@
 				</li><!--
 			 --><li class="display-inline-block width-one-third middle text-align-center">
 					<h1>
-						<a href="" title="Home" class="text-decoration-none" id="logo">HACKATHON</a>
+						<a href="" title="Home" class="text-decoration-none" id="logo">COPARENTING</a>
 						<dots ng-show="showLoading"></dots>
 					</h1>
 				</li><!--
@@ -83,6 +81,7 @@
 							<li><a href="" class="">Change Language</a></li>
 						</ul>
 					</div>
+					<br>
 					<div>
 						<h3 class="font-weight-bold">My Account</h3>
 						<ul class="">
@@ -92,6 +91,7 @@
 							<li><a href="" class="">Log Out</a></li>
 						</ul>
 					</div>
+					<br>
 					<div>
 						<h3 class="font-weight-bold">Help</h3>
 						<ul class="">
@@ -102,18 +102,17 @@
 				</nav>
 			</aside>
 
-			<section class="content narrow-width margin-0-auto padding-2em-1em" ng-hide="playlistItems || showLoading">
+			<section class="content">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
-				<p class="font-size-medium line-height-single">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla venenatis metus, at tincidunt nunc. Nullam nisi ligula, cursus in risus sed, blandit gravida quam. Phasellus blandit ultricies ex sed mollis. Morbi in nibh pharetra, varius ex varius, auctor tellus. Vestibulum placerat dictum tellus in viverra. Nullam nisl orci, consequat quis auctor non, gravida ut velit. Quisque tempor ut nisl at tempor. Nam euismod sed enim sit amet convallis.
+				<p class="font-size-medium line-height-single">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla venenatis metus, at tincidunt nunc. Nullam nisi ligula, cursus in risus sed, blandit gravida quam. Phasellus blandit ultricies ex sed mollis. Morbi in nibh pharetra, varius ex varius, auctor tellus. Vestibulum placerat dictum tellus in viverra. Nullam nisl orci, consequat quis auctor non, gravida ut velit. Quisque tempor ut nisl at tempor. Nam euismod sed enim sit amet convallis.</p>
 
-Fusce vestibulum pulvinar maximus. Sed ultrices scelerisque ullamcorper. Nullam leo tortor, suscipit sit amet euismod vulputate, porta et velit. Proin tempus faucibus lectus sed mollis. Ut arcu nisl, pharetra in pretium ac, euismod et mi. Fusce luctus dui tempor, sagittis quam ac, maximus dui. Proin blandit, lectus nec bibendum tincidunt, augue velit luctus sapien, lobortis pharetra elit sapien sed felis. Sed ullamcorper magna nec arcu pretium finibus. Ut interdum viverra leo ut blandit. Fusce tincidunt, est ac eleifend venenatis, nisl urna accumsan odio, ac sagittis quam sem in quam. Sed efficitur, est id fermentum suscipit, enim lectus molestie felis, et elementum libero ex et justo. Donec at mollis erat, volutpat ullamcorper sem. In auctor nibh magna, molestie dictum neque lacinia sed. Quisque ex ipsum, euismod sit amet aliquam et, aliquet sed urna. Quisque sagittis massa faucibus enim placerat porta.
-
-Maecenas sed cursus justo. Maecenas et neque ultrices, vehicula lacus eu, vulputate dolor. Fusce pharetra elit nec nibh venenatis, pellentesque imperdiet libero molestie. Integer facilisis nunc velit, luctus efficitur nunc sagittis sit amet. Nulla convallis gravida massa. Phasellus imperdiet tortor eget eros tristique aliquam. Nunc blandit lacinia lacus a consequat. Sed justo lectus, rhoncus vel ipsum in, tempor pellentesque tellus. Vestibulum tincidunt volutpat velit ut hendrerit. Donec purus enim, placerat vitae volutpat et, viverra et est. Quisque aliquet, nulla a semper dictum, est risus eleifend nisi, vel sagittis lectus ipsum in ex.</p>
-				<hr class="line-height-double">
-				<p class="font-size-medium line-height-single font-weight-bold">Which language are you learning?</p>
 				<br>
-				<select name="language_selector_select" ng-model="selectedLanguage" ng-options="language.name for language in languages">
-				</select>
+
+				<p class="font-size-medium line-height-single">Fusce vestibulum pulvinar maximus. Sed ultrices scelerisque ullamcorper. Nullam leo tortor, suscipit sit amet euismod vulputate, porta et velit. Proin tempus faucibus lectus sed mollis. Ut arcu nisl, pharetra in pretium ac, euismod et mi. Fusce luctus dui tempor, sagittis quam ac, maximus dui. Proin blandit, lectus nec bibendum tincidunt, augue velit luctus sapien, lobortis pharetra elit sapien sed felis. Sed ullamcorper magna nec arcu pretium finibus. Ut interdum viverra leo ut blandit. Fusce tincidunt, est ac eleifend venenatis, nisl urna accumsan odio, ac sagittis quam sem in quam. Sed efficitur, est id fermentum suscipit, enim lectus molestie felis, et elementum libero ex et justo. Donec at mollis erat, volutpat ullamcorper sem. In auctor nibh magna, molestie dictum neque lacinia sed. Quisque ex ipsum, euismod sit amet aliquam et, aliquet sed urna. Quisque sagittis massa faucibus enim placerat porta.</p>
+
+				<hr class="line-height-double">
+				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
+				<p class="font-size-medium line-height-single">Maecenas sed cursus justo. Maecenas et neque ultrices, vehicula lacus eu, vulputate dolor. Fusce pharetra elit nec nibh venenatis, pellentesque imperdiet libero molestie. Integer facilisis nunc velit, luctus efficitur nunc sagittis sit amet. Nulla convallis gravida massa. Phasellus imperdiet tortor eget eros tristique aliquam. Nunc blandit lacinia lacus a consequat. Sed justo lectus, rhoncus vel ipsum in, tempor pellentesque tellus. Vestibulum tincidunt volutpat velit ut hendrerit. Donec purus enim, placerat vitae volutpat et, viverra et est. Quisque aliquet, nulla a semper dictum, est risus eleifend nisi, vel sagittis lectus ipsum in ex.</p>
 			</section>
 		</section>
 
@@ -121,17 +120,17 @@ Maecenas sed cursus justo. Maecenas et neque ultrices, vehicula lacus eu, vulput
 
 		<footer class="text-align-center">
 			<nav id="tertiary" class="padding-1em">
-				<ul class="with-pipes">
+				<ul class="nav-stackable with-pipes">
 					<li><a href="" title="" class="font-size-medium">Home</a></li><!--
 				 --><li><a href="" title="" class="font-size-medium">About</a></li><!--
-			     --><li><a href="" title="" class="font-size-medium">F.A.Q.</a></li>
+			     --><li><a href="#" title="" class="font-size-medium" onclick="APP.showOverlay()">F.A.Q.</a></li>
 				</ul>
 			</nav>
 			<span class="copyright display-block padding-1em font-size-medium">&copy; 2014 langwij</span>
 		</footer>
 
-		<overlay class="overlay">
-			<div class="narrow-width margin-0-auto padding-2em-1em bg-white">
+		<overlay class="overlay" style="display: none;" id="overlay">
+			<div class="overlay-child narrow-width margin-0-auto padding-2em-1em bg-white">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Loading...</h2>
 				<p class="font-size-medium line-height-single">We thank you for patience while we load your entertainment for this evening.</p>
 			</div>

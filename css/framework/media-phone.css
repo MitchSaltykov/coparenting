@@ -99,11 +99,6 @@
 		.nav-stackable {
 			display: block;
 		}
-			.nav-stackable > li {
-				display: block;
-				width: 100%;
-				margin-bottom:;
-			}
 				.nav-stackable.with-pipes > li:after {
 					content: none;
 				}

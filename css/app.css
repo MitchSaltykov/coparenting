@@ -67,11 +67,12 @@ label[for="language_selector_select"] {
 /* content */
 #main {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 1200px;
 }
 .content {
 	float: right;
 	width: 70%;
+	padding: 2rem;
 }
 
 .sidebar {
