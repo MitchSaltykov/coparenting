@@ -23,3 +23,14 @@ a.btn {
 a.btn {
 	display: inline-block!important;
 }
+
+.btn-permissions {
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 0;
+}
+	.btn-permissions img {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}

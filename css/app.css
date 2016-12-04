@@ -114,7 +114,13 @@ label[for="language_selector_select"] {
 	.sidebar .card {
 		margin-right: 0;
     	width: 100%;
+    	position: relative;
 	}
+		.sidebar .card .btn-permissions {
+			position: absolute;
+			top: 1rem;
+			right: .5rem;
+		}
 	.sidebar .card .card-children ul li:first-child {
 		margin-right: 0;
 	}
