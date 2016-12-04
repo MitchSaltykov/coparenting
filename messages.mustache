@@ -4,25 +4,27 @@
 	</div>
 
 	{{#each message}}
-		<div style="padding: 10px">
-			{{#if incoming_message}}
+		{{#if incoming_message}}
+			<div style="padding: 10px" align="left">
 				<div align="right"><em>{{timestamp}}</em></div>
 				<div style="background-color: #F9DBBD; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
 					{{#if image}}
-						<img src="{{image}}"/>
+						<div align="center"><img src="{{image}}"/></div>
 					{{/if}}
 					{{text}}
 				</div>
-			{{else}}
+			</div>
+		{{else}}
+			<div style="padding: 10px" align="right">
 				<div align="left"><em>{{timestamp}}</em></div>
 				<div style="background-color: #D0C4DF; border-width:1px;border-style:solid;padding:5px;border-radius:7px;">
 					{{#if image}}
-						<img src="{{image}}"/>
+						<div align="center"><img src="{{image}}"/></div>
 					{{/if}}
 					{{text}}
 				</div>
-			{{/if}}
-		</div>
+			</div>
+		{{/if}}
 	{{/each}}
 	<div style='padding: 10px' class="name">
 		<textarea rows="15" cols="50"></textarea>
