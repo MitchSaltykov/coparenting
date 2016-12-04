@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/framework/buttons.css">
 		<link rel="stylesheet" type="text/css" href="css/framework/images.css">
 		<link rel="stylesheet" type="text/css" href="css/framework/lightbox.css">
+		<link rel="stylesheet" type="text/css" href="css/framework/overlay.css">
 		<link rel="stylesheet" type="text/css" href="css/framework/states.css">
 		<link rel="stylesheet" type="text/css" href="css/framework/media-phone.css">
 
@@ -71,7 +72,36 @@
 			</ul>
 		</header>
 
-		<section class="clearfix">
+		<section class="clearfix" id="main">
+			<aside class="sidebar">
+				<nav>
+					<div>
+						<h3 class="font-weight-bold">General</h3>
+						<ul class="">
+							<li><a href="" class="">Home</a></li>
+							<li><a href="" class="">Playlists</a></li>
+							<li><a href="" class="">Change Language</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="font-weight-bold">My Account</h3>
+						<ul class="">
+							<li><a href="" class="">My Preferences</a></li>
+							<li><a href="" class="">Change Password</a></li>
+							<li><a href="" class="">Change Email</a></li>
+							<li><a href="" class="">Log Out</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="font-weight-bold">Help</h3>
+						<ul class="">
+							<li><a href="" class="">F.A.Q.</a></li>
+							<li><a href="" class="">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</aside>
+
 			<section class="content narrow-width margin-0-auto padding-2em-1em" ng-hide="playlistItems || showLoading">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Welcome</h2>
 				<p class="font-size-medium line-height-single">Welcome to langwij. We are here as a complement to your language courses. Stream audio in the language of your choosing and just work the day away as your normally would and let your subconscious do the work.</p>
@@ -81,51 +111,6 @@
 				<select name="language_selector_select" ng-model="selectedLanguage" ng-options="language.name for language in languages">
 				</select>
 			</section>
-
-			<section class="content narrow-width margin-0-auto padding-2em-0 ng-hide" ng-show="playlistItems">
-
-				<div id="video"></div>
-
-				<div class="language-scene">
-
-					<nav class="nav-button">
-						<ul class="list-inline">
-							<li><button id="player_control_prev" class="btn bg-global-color-3" ng-click="prevVideo()">prev</button></li>
-							<li><button id="player_control_play" class="btn bg-global-color-3" ng-click="playVideo()">play</button></li>
-							<li><button id="player_control_pause" class="btn bg-global-color-3" ng-click="pauseVideo()">pause</button></li>
-							<li><button id="player_control_stop" class="btn bg-global-color-3" ng-click="stopVideo()">stop</button></li>
-							<li><button id="player_control_next" class="btn bg-global-color-3" ng-click="nextVideo()">next</button></li>
-						</ul>
-					</nav>
-				</div>
-
-				<br>
-
-				<ol id="playlist" class="playlist full-width list-block" ng-show="playlistItems">
-					<li class="playlist-item full-width clearfix" ng-repeat="playlistItem in playlistItems">
-						<a href="" title="" class="playlist-item-anchor" id="playlist_{{ playlistItem.v }}" ng-click="changeVideoURL( playlistItem, $index )" ng-class="itemClass( playlistItem )">
-							<ul class="list-block">
-								<li class="item-thumbnail"><img src="{{ playlistItem.thumbnail }}"></li>
-								<li class="item-title font-size-medium font-weight-bold">{{ playlistItem.itemTitle }}</li>
-								<li class="item-url">{{ playlistItem.url }}</li>
-								<li class="item-duration">{{ playlistItem.duration }}</li>
-								<li class="item-meta">
-									<ul class="list-inline">
-										<li class="circle">+</li><!--
-									 --><li class="circle">-</li>
-									</ul>
-								</li>
-								<li class="item-language is-hidden">{{ playlistItem.language }}</li>
-							</ul>
-						</a>
-					</li>
-				</ol>
-
-				<br>
-
-			</section>
-			<aside class="sidebar">
-			</aside>
 		</section>
 
 		<hr>
@@ -141,8 +126,8 @@
 			<span class="copyright display-block padding-1em font-size-medium">&copy; 2014 langwij</span>
 		</footer>
 
-		<overlay ng-transclude class="ng-hide">
-			<div class="content narrow-width margin-0-auto padding-2em-1em bg-white">
+		<overlay class="overlay">
+			<div class="narrow-width margin-0-auto padding-2em-1em bg-white">
 				<h2 class="font-size-large font-weight-bold line-height-triple">Loading...</h2>
 				<p class="font-size-medium line-height-single">We thank you for patience while we load your entertainment for this evening.</p>
 			</div>

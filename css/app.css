@@ -65,13 +65,21 @@ label[for="language_selector_select"] {
 	}
 
 /* content */
-
+#main {
+	margin: 0 auto;
+	max-width: 800px;
+}
 .content {
-	width: 90%;
+	float: right;
+	width: 70%;
 }
 
 .sidebar {
-	max-width: 200px;
+	float: left;
+    width: 30%;
+    background-color: #e6e6e6;
+    padding: 2rem;
+    line-height: 1.5rem;
 }
 
 /* video */
