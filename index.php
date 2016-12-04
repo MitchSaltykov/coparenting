@@ -111,7 +111,9 @@ switch ($user) {
 
 		<section class="clearfix" id="main">
 
+			<aside class="sidebar">
 			<?php include('sidebar.html'); ?>
+			</aside>
 
 			<?php if ($user == 'bp' && empty($page)) {
 				include('upcoming_visitations.html');

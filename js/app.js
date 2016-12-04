@@ -94,3 +94,27 @@ APP.loadTemplate = function loadTemplate(templateId, context) {
 
 	overlay.innerHTML = html;
 }
+
+APP.toggleDisplay = function toggleDisplay(event, toggleableGroupSelector) {
+	event.preventDefault();
+
+	var parent = event.target.parentElement;
+
+	// turn off others
+	var toggleableGroupElement = document.querySelector(toggleableGroupSelector);
+
+	var toggleableKids = toggleableGroupElement.querySelectorAll('.toggleable-content')
+	toggleableKids.forEach(function(element) {
+		element.style.display = 'none';
+	});
+
+	// turn on this one
+	// TODO: more perf
+	var toggleable = parent.querySelector('.toggleable-content');
+
+	var toggleableStyle = toggleable.style.display;
+
+	var newDisplay = toggleableStyle === 'none' ? 'block' : 'none';
+
+	toggleable.style.display = newDisplay;
+}

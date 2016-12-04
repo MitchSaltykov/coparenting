@@ -1,13 +1,13 @@
-<aside class="sidebar">
-	<nav>
-		<h3 class="font-weight-bold with-underline">My Cases</h3>
+<nav class="sidebar-toggleable-group">
+	<h3 class="font-weight-bold with-underline">My Cases</h3>
 
-		<div class="card child">
-			<ul>
-				<li class="card-title">The Gutierrez Case<button class="btn-with-icon" onclick="APP.showOverlay('permissions')"><img src="fnt/Entypo+/cog.svg" alt="gear" class="icon cog"></button></li>
+	<div class="card child">
+		<ul>
+			<li class="card-title">The Gutierrez Case<button class="btn-with-icon" onclick="APP.showOverlay('permissions')"><img src="fnt/Entypo+/cog.svg" alt="gear" class="icon cog"></button></li>
+			<div class="toggleable-content" style="display: none;">
 				<li class="parent">Mom: Ana Gutierrez</li>
 				<li class="card-children">
-					<ul >
+					<ul>
 						<li class="child">
 							<ul>
 								<li>
@@ -52,19 +52,37 @@
 						</li>
 					</ul>
 				</li>
-			</ul>
-		</div>
-		<div class="card child">
-			<span class="card-title">The Gutierrez Case</span>
-			<a href="">Expand</a>
-		</div>
-		<div class="card child">
-			<span class="card-title">The Gutierrez Case</span>
-			<a href="">Expand</a>
-		</div>
-		<div class="card child">
-			<span class="card-title">The Gutierrez Case</span>
-			<a href="">Expand</a>
-		</div>
-	</nav>
-</aside>
+			</div>
+			<a href="#" onclick="APP.toggleDisplay(event, '.sidebar-toggleable-group')">Expand</a>
+		</ul>
+	</div>
+	<div class="card child">
+		<ul>
+			<li class="card-title">The Gutierrez Case</li>
+			<div class="toggleable-content" style="display: none;">
+				show me
+			</div>
+			<a href="#" onclick="APP.toggleDisplay(event, '.sidebar-toggleable-group')">Expand</a>
+		</ul>
+	</div>
+	<div class="card child">
+		<ul>
+			<li class="card-title">The Gutierrez Case</li>
+			<div class="toggleable-content" style="display: none;">
+				show me
+			</div>
+			<a href="#" onclick="APP.toggleDisplay(event, '.sidebar-toggleable-group')">Expand</a>
+		</ul>
+	</div>
+	<div class="card child">
+	<div class="card child">
+		<ul>
+			<li class="card-title">The Gutierrez Case</li>
+			<div class="toggleable-content" style="display: none;">
+				show me
+			</div>
+			<a href="#" onclick="APP.toggleDisplay(event, '.sidebar-toggleable-group')">Expand</a>
+		</ul>
+	</div>
+	</div>
+</nav>
