@@ -6,9 +6,12 @@ a.gray-eeeeee {
 	color: #eeeeee;
 }
 hr {
-	border: 3px solid #eeeeee;
+	border: 3px solid rgba(100, 100, 100, 0.1);
 	margin-top: 19px;
 	margin-bottom: 20px;
+}
+body {
+	background-color: #f7f7f9;
 }
 body.has-header-fixed .overlay {
 	padding-top: 45px;
@@ -78,11 +81,44 @@ label[for="language_selector_select"] {
 .sidebar {
 	float: left;
     width: 30%;
-    background-color: #e6e6e6;
     padding: 2rem;
     line-height: 1.5rem;
 }
 
+.with-underline {
+    border-bottom: 1px solid rgba(100,100,100,.1);
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card {
+	width: 47.5%;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: white;
+    display: inline-block;
+}
+	.card-title {
+		font-size: 1.3rem;
+	}
+	.card:nth-child(odd) {
+		margin-right: 2.5%;
+	}
+	.card .card-children {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.card .card-children ul,
+	.card .card-children ul li {
+		display: inline-block;
+	}
+	.card .card-children ul li:first-child {
+		margin-right: 1rem;
+	}
+	.profile-thumbnail {
+		border-radius: 50%;
+	}
 /* video */
 #video {
 	width: 100%;

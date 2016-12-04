@@ -131,6 +131,16 @@
 		.copyright {
 			display: none!important;
 		}
+		.cards {
+			padding: 1rem;
+		}
+		.card {
+			width: 100%;
+			padding-right: 0;
+		}
+			.card:nth-child(odd) {
+				margin-right: 0;
+			}
 		footer {
 			width: 100%;
 			display: block;
