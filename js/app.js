@@ -7,21 +7,39 @@ APP.dataModels = {
 		message: 'Coming soon'
 	},
 	'child_info': {
-		child_name: 'Luke',
-		allergy: [{
-			allergen_id: 'Allergy 1',
-			is_allergic: true,
-			name: 'Pollen'
+		child: [{
+			child_name: 'Jon',
+			child_age: 4,
+			allergy: [{
+				allergen_id: 'Allergy 1',
+				is_allergic: true,
+				name: 'Pollen'
+			}, {
+				allergen_id: 'Allergy 2',
+				is_allergic: false,
+				name: 'Dander'
+			}],
+			morning_routine: 'Luke likes to wake up at 8am.',
+			afternoon_routine: "Gets very cranky if he's not ready for naptime by 12:30.",
+			bedtime_routine: 'Luke goes to bed before 11pm every night.',
+			overall_goal: 'Do a good job today'
 		}, {
-			allergen_id: 'Allergy 2',
-			is_allergic: false,
-			name: 'Dander'
-		}],
-	morning_routine: 'Luke likes to wake up at 8am.',
-	afternoon_routine: "Gets very cranky if he's not ready for naptime by 12:30.",
-	bedtime_routine: 'Luke goes to bed before 11pm every night.',
-	overall_goal: 'Do a good job today'
-		overall_goal: 'Do a good job today'
+			child_name: 'Gladys',
+			child_age: 6,
+			allergy: [{
+				allergen_id: 'Allergy 1',
+				is_allergic: true,
+				name: 'Pollen'
+			}, {
+				allergen_id: 'Allergy 2',
+				is_allergic: false,
+				name: 'Dander'
+			}],
+			morning_routine: 'Luke likes to wake up at 8am.',
+			afternoon_routine: "Gets very cranky if he's not ready for naptime by 12:30.",
+			bedtime_routine: 'Luke goes to bed before 11pm every night.',
+			overall_goal: 'Do a good job today'
+		}]
 	},
 	'permissions': {
 		parent: [{
@@ -42,7 +60,13 @@ APP.dataModels = {
 		unsupervised_visits_approved: true
 	},
 	'event_planning': {
-
+		child: [{
+			child_name: 'Jimmy',
+			foster_family_surname: 'Smiths'
+		}, {
+			child_name: 'Susie',
+			foster_family_surname: 'Jones'
+		}]
 	},
 	'relationships_list': {
 
@@ -122,5 +146,13 @@ APP.toggleDisplay = function toggleDisplay(event, toggleableGroupSelector) {
 };
 
 APP.submitVisit = function submitVisit() {
-	window.location.href = '?user=bp&event_submitted=true';
+	window.location.href = '?user=bp&event_submitted=true&allowed=true';
+};
+
+APP.profileBuilt = function profileBuilt() {
+	window.location.href = '?user=sw&page=relationships_list&profile_built=true&profile_id=1&case_id=1'
+};
+
+APP.goToRelationshipsList = function goToRelationshipsList() {
+	window.location.href = '?user=sw&page=relationships_list&case_id=1';
 }

@@ -3,8 +3,8 @@
 
 	<div class="card child">
 		<ul>
-			<li class="card-title">The Gutierrez Case<button class="btn-with-icon" onclick="APP.showOverlay('permissions')"><img src="fnt/Entypo+/cog.svg" alt="gear" class="icon cog"></button></li>
-			<div class="toggleable-content" style="display: none;">
+			<li class="card-title" onclick="APP.goToRelationshipsList()">The Gutierrez Case<button class="btn-with-icon" onclick="APP.showOverlay('permissions')"><img src="fnt/Entypo+/cog.svg" alt="gear" class="icon cog"></button></li>
+			<div class="toggleable-content" <?php if ($_GET['case_id'] != 1) { ?>style="display: none;"<?php } ?>>
 				<li class="parent">Mom: Ana Gutierrez</li>
 				<li class="card-children">
 					<ul>

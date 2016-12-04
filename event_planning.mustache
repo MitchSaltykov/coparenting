@@ -23,6 +23,13 @@
 	<br>
 
 	<div class="name">
+		<div>Event Date & Time:</div>
+		<input type="date">
+	</div>
+
+	<br>
+
+	<div class="name">
 		<div>Description:</div>
 		<textarea rows="5" class="full-width textarea">{{description}}</textarea>
 	</div>
@@ -42,7 +49,7 @@
 
 	<div style='clear:both' align="center">
 		<hr/>
-		<button onclick="APP.submitVisit()">Propose</button>
-		<button>Cancel</button>
+		<button onclick="APP.submitVisit()" class="btn">Propose</button>
+		<button class="btn">Cancel</button>
 	</div>
 </div>

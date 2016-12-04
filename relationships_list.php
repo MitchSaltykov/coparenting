@@ -8,8 +8,9 @@
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 				</ul>
-			</li>
-			<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
+			</li>		
+			<li><button class="btn" onclick="APP.showOverlay('child_info')">
+				<?php if ($_GET['profile_built'] == 'true' && $_GET['profile_id'] == 1) { echo 'Review'; } else { echo 'Start Initial Meeting'; } ?></button></li>
 		</ul>
 	</li><!--
  --><li class="card">
@@ -21,7 +22,7 @@
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 				</ul>
 			</li>
-			<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
+			<li><button class="btn" onclick="APP.showOverlay('child_info')">Start Initial Meeting</button></li>
 		</ul>
 	</li><!--
  --><li class="card">
@@ -33,7 +34,7 @@
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 				</ul>
 			</li>
-			<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
+			<li><button class="btn" onclick="APP.showOverlay('child_info')">Start Initial Meeting</button></li>
 		</ul>
 	</li><!--
  --><li class="card">
@@ -45,7 +46,7 @@
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 				</ul>
 			</li>
-			<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
+			<li><button class="btn" onclick="APP.showOverlay('child_info')">Start Initial Meeting</button></li>
 		</ul>
 	</li><!--
  --><li class="card">
@@ -57,7 +58,7 @@
 					<li><img src="http://placehold.it/80x80/" alt="child" class="profile-thumbnail"></li>
 				</ul>
 			</li>
-			<li><button class="btn" onclick="APP.showOverlay()">Start Initial Meeting</button></li>
+			<li><button class="btn" onclick="APP.showOverlay('child_info')">Start Initial Meeting</button></li>
 		</ul>
 	</li>
 </ul>

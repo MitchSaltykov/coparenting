@@ -11,6 +11,7 @@ if (!$page) {
 switch ($user) {
     case 'sw':
         $title = 'Social Worker';
+        $case_id = 1;
         break;
     case 'fp':
         $title = 'Foster Parent';
@@ -112,7 +113,7 @@ switch ($user) {
 		<section class="clearfix" id="main">
 
 			<aside class="sidebar">
-			<?php include('sidebar.html'); ?>
+			<?php include('sidebar.php'); ?>
 			</aside>
 
 			<?php if ($user == 'bp' && empty($page)) {
@@ -135,7 +136,9 @@ switch ($user) {
 				include('message.html');
 			} ?>
 
-			<?php if ($user == 'sw') {
+			<?php if ($user == 'sw' && empty($page)) {
+				include('sw_welcome.html');
+			} elseif ($user == 'sw' && $page = 'relationships_list') {
 				include('relationships_list.php');
 			} elseif ($user == 'fp') {
 				include('relationship_list_fp.php');
