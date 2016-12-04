@@ -1,0 +1,45 @@
+<div class="content">
+	<div style='padding: 10px' class="name">
+		Event Name: {{event_name}}
+	</div>
+	<div style='padding: 10px' class="name">
+		Event type: {{event_type_name}}
+	</div>
+
+	<div style='padding: 10px' class="name">
+		<div>Description:</div>
+		{{description}}
+	</div>
+
+	<form>
+		<div><input type="button" value="I attended"/><input type="button" value="I couldn't make it"/></div>
+		<div id='attended' style='padding: 10px; display: none'>
+			<div style='padding: 10px'>
+				How did you do?
+			</div>
+
+			<div style='padding: 10px'>
+				<div>What went well?</div>
+				<textarea rows="5" cols="50">{{what_went_well}}</textarea>
+			</div>
+
+			<div style='padding: 10px'>
+				<div>What would you like to do better next time?</div>
+				<textarea rows="5" cols="50">{{what_to_improve}}</textarea>
+			</div>
+		</div>
+
+		<div id='did_not_attend' style='padding: 10px; display: none'>
+			<div style='padding: 10px'>
+				What happened?
+				<textarea rows="5" cols="50">{{why_missed}}</textarea>
+			</div>
+		</div>
+
+		<div style='clear:both' align="center">
+			<hr/>
+			<button>Save</button>
+			<button>Cancel</button>
+		</div>
+	</form>
+</div>
